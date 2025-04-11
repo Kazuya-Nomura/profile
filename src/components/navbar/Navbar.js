@@ -131,8 +131,8 @@ const Navbar = () => {
                     keyframes: [
                         {
                             "--active-element-width": `${spacing > navElement.offsetWidth - 60
-                                    ? navElement.offsetWidth - 60
-                                    : spacing
+                                ? navElement.offsetWidth - 60
+                                : spacing
                                 }px`,
                             duration: 0.3,
                             ease: "none",
@@ -194,22 +194,31 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav ref={navRef} className="top-nav">
-            <ul>
-                <li className="active">
-                    <button>Animation</button>
-                </li>
-                <li>
-                    <button>Branding</button>
-                </li>
-                <li>
-                    <button>Illustration</button>
-                </li>
-                <li>
-                    <button>Illustration</button>
-                </li>
-            </ul>
-        </nav>
+        <div className="nav-cover">
+            {/* <div class="logo-cover">
+                <div class="css">
+                    <span>C</span>
+                    <span>S</span>
+                    <span>S</span>
+                </div>
+            </div> */}
+            <nav ref={navRef} className="top-nav">
+                <ul>
+                    <li className="active">
+                        <button>Animation</button>
+                    </li>
+                    <li>
+                        <button>Branding</button>
+                    </li>
+                    <li>
+                        <button>Illustration</button>
+                    </li>
+                    <li>
+                        <button>Illustration</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     );
 };
 

@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 
 // import shader sources as strings
-import vertexShaderSource   from '!!raw-loader!./shaders/vertex.vs';
-import fragmentShaderSource from '!!raw-loader!./shaders/fragment.fs';
+import vertexShaderSource   from '!!raw-loader!../../shaders/fire-gl-vertex.vs';
+import fragmentShaderSource from '!!raw-loader!../../shaders/fire-gl-fragment.fs';
 
 export default function WebGLCanvas() {
   const canvasRef = useRef(null);

@@ -1,16 +1,21 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import Navbar from "./components/navbar/Navbar";
-import WebGLCanvas from "./components/fire-gl/WebGLCanvas";
+import WebGLCanvas from "./components/fire-gl/FireGL";
+import BurningPaper from "./components/burning-payper/BurningPaper";
+import Nav from "./components/nav/Nav"
+import Footer from "./components/footer/Footer";
+// <div style={{ display: "flex", position: "relative", width: "100%", flexDirection: "column" }}>
+//     <Navbar />
 
+// <BurningPaper />
+//     <WebGLCanvas />
+// </div>
 const App = () => (
-    <div style={{ display: "flex", position: "relative", width: "100%", flexDirection: "column" }}>
-        {/* <Navbar />
-        <div style={{ height: "200vh", background: "#f0f0f0" }}>
-        <h1 style={{ textAlign: "center"}}>Scroll Down</h1>
-        </div> */}
-        <WebGLCanvas />
-    </div>
+    <>
+        <Nav />
+        <Footer />
+    </>
 );
 
 const rootElement = document.getElementById("root");
