@@ -1,14 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import Navbar from "./components/Navbar";
 
 const App = () => (
-  <div>
+  <div style={{display:"flex", position:"relative", width:"100%", flexDirection: "column"}}>
     <Navbar />
     <div style={{ height: "200vh", background: "#f0f0f0" }}>
-      <h1 style={{ textAlign: "center", paddingTop: "50vh" }}>Scroll Down</h1>
+      <h1 style={{ textAlign: "center"}}>Scroll Down</h1>
     </div>
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(<App />);
