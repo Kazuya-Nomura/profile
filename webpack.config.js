@@ -30,6 +30,14 @@ module.exports = {
                     },
                 },
             },
+            {
+                test: /\.(glsl|vs|fs)$/,
+                use: [
+                    'raw-loader',
+                    // uncomment if you want to support glslify syntax:
+                    // 'glslify-loader'
+                ]
+            }
         ],
     },
     plugins: [
